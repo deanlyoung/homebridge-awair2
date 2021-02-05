@@ -9,12 +9,11 @@
       "ES2018",
       "dom"
     ],
-    "sourceMap": true,
-    "rootDir": "src",
+    "baseUrl": ".",
     "outDir": "dist",
+    "sourceMap": true,
     "allowJs": true,
     "resolveJsonModule": true,
-
     "strict": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true

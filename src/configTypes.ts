@@ -6,10 +6,18 @@ export type AwairPlatformConfig = {
   endpoint: string;
   polling_interval: number;
   limit: number;
-  logging: boolean;
-  verbose: boolean;
   carbonDioxideThreshold: number;
   carbonDioxideThresholdOff: number;
+  vocMw: number;
+  occupancyDetection: boolean;
+  occupancyOffset: number;
+  occupancyRestart: false;
+  occupancyDetectedLevel: number;
+  occupancyNotDetectedLevel: number;
+  enableModes: boolean;
+  logging: boolean;
+  verbose: boolean;
+  development: boolean;
   ignoredDevices: [string];
 };
 
@@ -26,6 +34,7 @@ export type DeviceConfig = {
   deviceUUID: string;
   deviceId: number;
   locationName: string;
+  accType: string;
 };
 
 export type UserInfoConfig = {
@@ -36,4 +45,15 @@ export type UserInfoConfig = {
 	latest: number;
 	getPowerStatus: number;
 	getTimeZone: number;
+};
+
+export type DisplayModeConfig = {
+  mode: string;  // score, temp, humid, co2, voc, pm25, clock
+  clock_mode: string; // 12hr, 24hr
+  temp_unit: string; // c, f
+};
+
+export type LEDModeConfig = {
+  mode: string; // auto, manual, sleep
+  brightness: number; // 0 -> 100 in %
 };

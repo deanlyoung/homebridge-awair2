@@ -16,10 +16,16 @@
 			"airQualityMethod": "awair-aqi",
 			"endpoint": "15-min-avg",
 			"limit": 1,
+			"carbonDioxideThreshold": 1000,
+			"carbonDioxideThresholdOff": 800,
+			"vocMw": 72.66578273019740,
+			"occupancyDetection": false,
+			"occupancyOffset": 2,
+			"occupancyRestart": false,
+			"enableModes": false,
 			"logging": false,
 			"verbose": false,
-			"carbonDioxideThreshold": 1200,
-			"carbonDioxideThresholdOff": 800,
+			"development": false,
 			"ignoredDevices": [
 				"70886Bxxxxxx"
 			]
